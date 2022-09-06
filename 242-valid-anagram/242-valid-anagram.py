@@ -6,6 +6,6 @@ class Solution(object):
         :rtype: bool
         """
         
-        return sorted(s) == sorted(t)
+        return Counter(s) == Counter(t)
             
         
