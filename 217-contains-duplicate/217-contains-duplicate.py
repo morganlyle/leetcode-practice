@@ -5,10 +5,4 @@ class Solution(object):
         :rtype: bool
         """
         
-        i = set()
-        
-        for n in nums:
-            if n in i:
-                return True
-            i.add(n)
-        return False
+        return len(nums) != len(set(nums))
